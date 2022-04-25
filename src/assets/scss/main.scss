@@ -1,0 +1,96 @@
+
+
+@mixin xs {
+    @media screen and (max-width: 575.98px) {
+      @content;
+    }
+}
+ 
+@mixin sm {
+  @media screen and (min-width: 576px) and (max-width: 767.98px) {
+    @content;
+  }
+}
+ 
+@mixin md {
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    @content;
+  }
+}
+ 
+@mixin lg {
+  @media screen and(min-width: 992px) and (max-width: 1199.98px) {
+    @content;
+  }
+}
+ 
+@mixin xl {
+  // 1200 < screen
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+
+
+@mixin mobile {
+  @media screen and (max-width: 599.98px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+@media screen and (min-width: 600px) and (max-width: 767.98px) {
+  @content;
+}
+}
+
+@mixin laptop {
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  @content;
+}
+}
+
+@mixin desktop {
+@media screen and(min-width: 992px) and (max-width: 1199.98px) {
+  @content;
+}
+}
+
+@mixin large {
+// 1200 < screen
+@media screen and (min-width: 1200px) {
+  @content;
+}
+}
+
+
+
+
+
+
+
+$primary: #F44336;
+$text:#4a4a4a;
+.general{
+  background-color: $primary;
+}
+.business{
+  background-color: #1877F2;
+}
+.sports{
+  background-color: #F1C40F;
+}
+.health{
+  background-color: #2ECC71;
+}
+.technology{
+  background-color: #3F51B5;
+}
+.entertainment{
+  background-color: #9B59B6;
+}
+.science{
+  background-color: #00ACC1;
+}
+
